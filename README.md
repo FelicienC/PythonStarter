@@ -3,6 +3,9 @@
 A modern Python package starter using `uv`, Ruff, `ty`, pytest, pre-commit, and
 codespell.
 
+Documentation is built with [MkDocs](https://www.mkdocs.org/). See the
+[documentation index](docs/index.md) for the current site.
+
 ### Development
 
 Initialize the development environment and install the Git hooks:

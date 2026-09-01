@@ -1,6 +1,6 @@
 UV := uv
 
-.PHONY: init tests pre-commit clean
+.PHONY: init tests docs-build docs-serve pre-commit clean
 
 init:
 	$(UV) sync
@@ -12,6 +12,12 @@ tests:
 
 pre-commit:
 	$(UV) run pre-commit run --all-files
+
+docs-build:
+	$(UV) run mkdocs build --strict
+
+docs-serve:
+	$(UV) run mkdocs serve
 
 clean:
 	rm -rf .venv .pytest_cache .ruff_cache .ty_cache build dist *.egg-info

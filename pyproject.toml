@@ -14,6 +14,7 @@ dev = [
     "codespell>=2.4.1",
     "conventional-pre-commit>=4.2.0",
     "deptry>=0.23.0",
+    "mkdocs>=1.6.1",
     "pre-commit>=4.3.0",
     "pytest>=8.4.1",
     "pytest-cov>=6.2.1",

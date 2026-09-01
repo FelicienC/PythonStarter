@@ -53,6 +53,12 @@ repos:
         language: system
         pass_filenames: false
 
+      - id: mkdocs-build
+        name: mkdocs build
+        entry: uv run --no-sync mkdocs build --strict
+        language: system
+        pass_filenames: false
+
       - id: conventional-pre-commit
         name: conventional commit
         entry: uv
