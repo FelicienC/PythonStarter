@@ -15,3 +15,6 @@ htmlcov/
 
 # MkDocs generated site
 site/
+
+.ruff_cache
+.pytest_cache
