@@ -1,17 +1,17 @@
 UV := uv
 
-.PHONY: init tests docs-build docs-serve pre-commit clean
+.PHONY: init tests docs-build docs-serve prek clean
 
 init:
 	$(UV) sync
-	$(UV) run pre-commit install
-	$(UV) run pre-commit install --hook-type commit-msg
+	$(UV) run prek install
+	$(UV) run prek install --hook-type commit-msg
 
 tests:
 	$(UV) run pytest --cov-fail-under=100
 
-pre-commit:
-	$(UV) run pre-commit run --all-files
+prek:
+	$(UV) run prek run --all-files
 
 docs-build:
 	$(UV) run mkdocs build --strict

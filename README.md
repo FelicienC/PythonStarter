@@ -1,6 +1,6 @@
 ## PythonStarter
 
-A modern Python package starter using `uv`, Ruff, `ty`, pytest, pre-commit, and
+A modern Python package starter using `uv`, Ruff, `ty`, pytest, prek, and
 codespell.
 
 Documentation is built with [MkDocs](https://www.mkdocs.org/). See the
@@ -20,10 +20,10 @@ Run the test suite with coverage:
 make tests
 ```
 
-Run all pre-commit checks manually:
+Run all prek checks manually:
 
 ```sh
-make pre-commit
+make prek
 ```
 
 Remove the virtual environment and generated files:
